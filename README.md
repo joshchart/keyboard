@@ -45,3 +45,9 @@ I use the ```hyper``` key with both Shortcat and Amethyst.
   - ```enter``` for Cycle layout forward (used to switch between fullscreen and side-by-side windows).
   - ```-``` for Shrink main pane (decrease size of window, increasing the other window).
   - ```=``` for Expand main pane (increase size of window, decreasing the other window).
+
+Installation
+-
+1. Install [Karabiner Elements](https://karabiner-elements.pqrs.org/)
+2. Install [Shortcat](https://shortcat.app/) or ```brew install shortcat```
+3. Install [Amethyst](https://ianyh.com/amethyst/) or ```brew install --cask amethyst```
