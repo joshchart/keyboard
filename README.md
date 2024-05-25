@@ -14,7 +14,7 @@ Here are the apps I use:
 Features:
 -
 #### Remapped Caps Lock to a ```hyper``` key using Karabiner Elements:
- - Single tap ```hyper``` key for backspace.
+ - Single click ```hyper``` key for backspace.
  - ```hyper``` key and:
    - Use ```j``` / ```k``` / ```i``` / ```l``` for left/down/up/right respectively.
    - Use ```g``` for left click.
