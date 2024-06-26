@@ -50,14 +50,14 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "i",
+                                    "key_code": "t",
                                     "modifiers": {
                                         "mandatory": []
                                     }
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a 'iTerm.app'"
+                                        "shell_command": "open -a 'WezTerm.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -216,7 +216,7 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "open_bracket"
+                                            "key_code": "semicolon"
                                         },
                                         {
                                             "key_code": "n"
@@ -258,7 +258,7 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "open_bracket"
+                                            "key_code": "semicolon"
                                         },
                                         {
                                             "key_code": "m"
@@ -300,7 +300,7 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "open_bracket"
+                                            "key_code": "semicolon"
                                         },
                                         {
                                             "key_code": "s"
@@ -342,7 +342,7 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "open_bracket"
+                                            "key_code": "semicolon"
                                         },
                                         {
                                             "key_code": "c"
@@ -384,7 +384,7 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "open_bracket"
+                                            "key_code": "semicolon"
                                         },
                                         {
                                             "key_code": "a"
@@ -426,7 +426,7 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "open_bracket"
+                                            "key_code": "semicolon"
                                         },
                                         {
                                             "key_code": "g"
@@ -468,7 +468,7 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "open_bracket"
+                                            "key_code": "semicolon"
                                         },
                                         {
                                             "key_code": "f"
@@ -510,7 +510,7 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "open_bracket"
+                                            "key_code": "semicolon"
                                         },
                                         {
                                             "key_code": "d"
@@ -552,10 +552,10 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "open_bracket"
+                                            "key_code": "semicolon"
                                         },
                                         {
-                                            "key_code": "i"
+                                            "key_code": "t"
                                         }
                                     ],
                                     "simultaneous_options": {
@@ -582,7 +582,7 @@
                                         }
                                     },
                                     {
-                                        "shell_command": "open -a 'iTerm.app'"
+                                        "shell_command": "open -a 'WezTerm.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -635,7 +635,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change right command to control+option+shift.",
+                                "description": "Change right command to left_command+left_option.",
                                 "from": {
                                     "key_code": "right_command",
                                     "modifiers": {
@@ -650,6 +650,24 @@
                                         "modifiers": [
                                             "left_option"
                                         ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "Right Command + A (mapped to left_command+left_option+a) to Esc",
+                                "from": {
+                                    "key_code": "a",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "escape"
                                     }
                                 ],
                                 "type": "basic"
@@ -754,9 +772,9 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "Hyper + J to Left Arrow",
+                                "description": "Hyper + H to Left Arrow",
                                 "from": {
-                                    "key_code": "j",
+                                    "key_code": "h",
                                     "modifiers": {
                                         "mandatory": [
                                             "command",
@@ -774,9 +792,9 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "Hyper + I to Up Arrow",
+                                "description": "Hyper + k to Up Arrow",
                                 "from": {
-                                    "key_code": "i",
+                                    "key_code": "k",
                                     "modifiers": {
                                         "mandatory": [
                                             "command",
@@ -794,9 +812,9 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "Hyper + K to Down Arrow",
+                                "description": "Hyper + J to Down Arrow",
                                 "from": {
-                                    "key_code": "k",
+                                    "key_code": "j",
                                     "modifiers": {
                                         "mandatory": [
                                             "command",
@@ -1322,7 +1340,18 @@
                     "mouse_flip_y": false,
                     "mouse_swap_wheels": false,
                     "mouse_swap_xy": false,
-                    "simple_modifications": [],
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "apple_vendor_top_case_key_code": "keyboard_fn"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_control"
+                                }
+                            ]
+                        }
+                    ],
                     "treat_as_built_in_keyboard": false
                 },
                 {
